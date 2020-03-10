@@ -17,7 +17,6 @@ body {
   font-size: 18px;
   width: 100%;
   scroll-behavior: smooth;
-  overflow: scroll;
   -webkit-overflow-scrolling: touch;
   margin: 0;
   background: var(--purple);
@@ -42,7 +41,8 @@ section {
 section h1 {
   margin: 0 0 2rem;
   padding: 0;
-  font-size: 2.5rem;
+  font-size: 2rem;
+  line-height: 1.1;
 }
 
 p {
@@ -80,7 +80,7 @@ section ul li {
   margin: 0 0 0.5rem;
   padding: 0;
   line-height: 1.2;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .form form h2 span {
@@ -143,8 +143,12 @@ footer {
   color: var(--white);
 }
 
+footer img {
+  max-width: 50px;
+}
+
 footer h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   line-height: 1.5;
   margin: 0;
   padding: 0;
@@ -172,5 +176,11 @@ footer h2 small {
   }
   .form img {
     margin: 0 0 1rem;
+  }
+  section h1, footer h2 {
+    font-size: 2.5rem;
+  }
+  .form form h2 {
+    font-size: 2rem;
   }
 }
