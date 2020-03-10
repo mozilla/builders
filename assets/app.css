@@ -88,11 +88,10 @@ section ul li {
   text-transform: uppercase;
 }
 
-.form label, .form input, .form select, .form textarea {
+.form label, .form .input-title, .form input, .form select, .form textarea {
   width: 100%;
   display: block;
   margin-bottom: 1.5rem;
-  font-size: 1rem;
 }
 
 .form input, .form select, .form textarea {
@@ -101,15 +100,30 @@ section ul li {
   padding: 0.5rem;
 }
 
-.form label {
+.form label, .form .input-title {
   margin-bottom: 0.25rem;
   font-weight: 500;
   font-size: 1.1rem;
 }
 
+.field-wrapper {
+  display: flex;
+  padding: 0.5rem 0 1rem;
+}
+
+.form input[type="checkbox"] {
+  width: auto;
+  transform: scale(1.25);
+}
+
+.form input[type="checkbox"] ~ label  {
+  padding-left: 1rem;
+  width: auto;
+  display: inline-block;
+  font-weight: 400;
+}
+
 .form input[type="submit"] {
-    appearance: none;
-    -webkit-appearance: none;
     background: var(--blue);
     color: var(--white);
     border-color: var(--blue);
@@ -125,7 +139,6 @@ section ul li {
     text-decoration: none;
     text-shadow: none;
     transition: background-color .1s ease-in-out, border-color .1s ease-in-out;
-    font-size: 1rem;
 }
 
 .form input[type="submit"]:active {
@@ -136,6 +149,33 @@ section ul li {
 .form input[type="submit"]:hover, .form input[type="submit"]:focus, {
   cursor: pointer;
   text-decoration: none;
+}
+
+/* Mailchimp */
+
+#mc_embed_signup div.mce_inline_error {
+  background-color: #ff4f5e !important;
+  border-radius: 2px;
+  font-weight: 400 !important;
+  font-family: 'Inter', sans-serif !important;
+  padding: .9em;
+}
+
+.asterisk {
+  color: #ff4f5e;
+}
+
+input.mce_inline_error[type="email"] {
+  border-color: #ff4f5e !important;
+  margin-bottom: 0.5rem;
+  background-color: rgba(255, 79, 94, 0.25);
+}
+
+.indicates-required {
+  font-size: 1rem;
+  display: block;
+  padding: 0 0 0.5rem;
+  text-align: right;
 }
 
 /* Footer */
