@@ -92,6 +92,7 @@ section ul li {
   width: 100%;
   display: block;
   margin-bottom: 1.5rem;
+  font-size: 1rem;
 }
 
 .form input, .form select, .form textarea {
@@ -107,6 +108,8 @@ section ul li {
 }
 
 .form input[type="submit"] {
+    appearance: none;
+    -webkit-appearance: none;
     background: var(--blue);
     color: var(--white);
     border-color: var(--blue);
@@ -122,6 +125,7 @@ section ul li {
     text-decoration: none;
     text-shadow: none;
     transition: background-color .1s ease-in-out, border-color .1s ease-in-out;
+    font-size: 1rem;
 }
 
 .form input[type="submit"]:active {
