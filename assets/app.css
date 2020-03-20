@@ -48,7 +48,7 @@ main {
   color: var(--black);
 }
 
-section {
+section, .wrapper {
   margin: 0 auto;
   max-width: 850px;
 }
@@ -111,29 +111,49 @@ section ul li, .list li {
   font-size: 2rem;
 }
 
-footer {
+.footer-purple {
   padding: var(--padding);
   background: var(--purple);
   text-align: center;
   color: var(--white);
 }
 
-footer img {
+.footer-purple img {
   max-width: 50px;
 }
 
-footer h2 {
+.footer-purple h2 {
   font-size: 2.5rem;
   line-height: 1.5;
   margin: 0;
   padding: 0;
 }
 
-footer h2 small {
+.footer-purple h2 small {
   display: block;
   font-family: 'intermedium', sans-serif;
   font-weight: 400;
   font-size: 1rem;
+}
+
+.footer-black {
+  background: #000;
+  padding: 24px 2em;
+  font-size: 0.75rem;
+
+}
+
+.footer-logo {
+  margin: 1rem auto 2rem;
+}
+
+.moz-logo {
+  display: block;
+  max-width: 100px;
+}
+
+.footer-black a, .footer-black a:visited {
+  color: var(--white);
 }
 
 .upper {
