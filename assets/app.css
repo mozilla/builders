@@ -23,20 +23,19 @@ body {
 }
 
 @font-face {
-    font-family: 'intermedium';
-    src: url('fonts/inter-medium.woff2') format('woff2'),
-         url('fonts/inter-medium.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+  font-family: 'intermedium';
+  src: url('fonts/inter-medium.woff2') format('woff2'),
+       url('fonts/inter-medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'interregular';
-    src: url('fonts/inter-regular.woff2') format('woff2'),
-         url('fonts/inter-regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'interregular';
+  src: url('fonts/inter-regular.woff2') format('woff2'),
+       url('fonts/inter-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 h1, h2 {
