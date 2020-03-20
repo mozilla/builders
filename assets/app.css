@@ -95,7 +95,7 @@ section ul li, .list li {
 
 .form img {
   display: block;
-  max-width: 100%;
+  max-width: 40%;
   margin: 0 0 1rem;
   align-self: flex-start;
 }
@@ -161,6 +161,7 @@ footer h2 small {
   }
   .form img {
     margin: 0 auto 1rem;
+    max-width: 100%;
   }
   section h1, footer h2 {
     font-size: 2rem;
