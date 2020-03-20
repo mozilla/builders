@@ -12,7 +12,7 @@ body {
   --blue: #62cddf;
   --color-green-20: #b3ffe3;
 
-  font-family: 'Inter', sans-serif;
+  font-family: 'interregular', sans-serif;
   font-weight: 300;
   font-size: 18px;
   width: 100%;
@@ -20,6 +20,23 @@ body {
   -webkit-overflow-scrolling: touch;
   margin: 0;
   background: var(--purple);
+}
+
+@font-face {
+    font-family: 'intermedium';
+    src: url('fonts/inter-medium.woff2') format('woff2'),
+         url('fonts/inter-medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'interregular';
+    src: url('fonts/inter-regular.woff2') format('woff2'),
+         url('fonts/inter-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 h1, h2 {
@@ -115,7 +132,7 @@ footer h2 {
 
 footer h2 small {
   display: block;
-  font-family: 'Inter', sans-serif;
+  font-family: 'intermedium', sans-serif;
   font-weight: 400;
   font-size: 1rem;
 }
