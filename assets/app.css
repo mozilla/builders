@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   --spacing: calc(1% + 1rem);
   --padding: calc(var(--spacing) * 1.5) var(--spacing);
@@ -129,6 +133,7 @@ aside p {
 @media only screen and (max-width: 860px) {
   #content {
     flex-direction: column;
+    width: 100%;
   }
 
   main {
