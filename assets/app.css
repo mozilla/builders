@@ -61,7 +61,7 @@ header {
   padding-top: 0;
 }
 
-#content {
+.content {
   padding-left: var(--spacing);
   padding-right: var(--spacing);
   padding-bottom: calc(var(--spacing) * 1.5);
@@ -93,6 +93,13 @@ aside p {
   font-size: 0.96rem;
   margin-top: 0.5rem;
   margin-bottom: 2rem;
+}
+
+#faq {
+  width: 67%;
+  margin: 0;
+  font-size: 1.1rem;
+  flex-direction: column;
 }
 
 #faq ul {
@@ -131,7 +138,7 @@ aside p {
 }
 
 @media only screen and (max-width: 860px) {
-  #content {
+  .content {
     flex-direction: column;
     width: 100%;
   }
@@ -146,6 +153,10 @@ aside p {
     border-top: 1px solid black;
     margin-top: 2rem;
     padding-top: 1rem;
+  }
+
+  #faq {
+    width: 100%;
   }
 }
 
