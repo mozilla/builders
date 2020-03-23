@@ -11,6 +11,7 @@ body {
   --black: #000000;
   --blue: #62cddf;
   --color-green-20: #b3ffe3;
+  --color-highlight: #FFE8DE;
 
   font-family: 'interregular', sans-serif;
   font-weight: 300;
@@ -19,7 +20,7 @@ body {
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
   margin: 0;
-  background: var(--purple);
+  padding-top: calc(var(--spacing) * 1.5);
 }
 
 @font-face {
@@ -38,19 +39,114 @@ body {
   font-style: normal;
 }
 
-h1, h2 {
+h1, h2, h3 {
   font-family: "Zilla Slab", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+h2 {
+  margin-top: 40px;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding-left: var(--spacing);
+  padding-right: var(--spacing);
+  padding-top: 0;
+}
+
+#content {
+  padding-left: var(--spacing);
+  padding-right: var(--spacing);
+  padding-bottom: calc(var(--spacing) * 1.5);
+  display: flex;
+  flex-direction: row;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
 main {
-  padding: var(--padding);
   background-color: var(--white);
   color: var(--black);
+  flex: 0.67;
+  margin-right: 3rem;
+  font-size: 1.1rem;
+}
+
+aside {
+  flex: 0.33;
+}
+
+aside h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+aside p {
+  font-size: 0.96rem;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+#faq ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#faq .answer li {
+  margin: 0;
+  padding: 0;
+}
+
+#faq .answer ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: circle;
+  padding-left: 2.2rem;
+  padding-bottom: 0rem;
+}
+
+#faq .answer ul li {
+  padding-bottom: 1rem;
+}
+
+#faq ul li p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0;
+  margin-bottom: 1rem;
+  margin-top: 0.6rem;
+}
+
+#faq ul li p:before {
+  content: '▸';
+  margin-right: 0.6rem;
+}
+
+@media only screen and (max-width: 860px) {
+  #content {
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1;
+    margin-right: 0;
+  }
+
+  aside {
+    flex: 1;
+    border-top: 1px solid black;
+    margin-top: 2rem;
+    padding-top: 1rem;
+  }
 }
 
 section, .wrapper {
   margin: 0 auto;
-  max-width: 850px;
+  max-width: 1240px;
 }
 
 section h1 {
@@ -73,8 +169,13 @@ section ul, .list  {
   padding-left: 20px;
 }
 
-section ul li, .list li {
-  padding: 0 0 1.5rem;
+section ol, section ul {
+  padding-left: 24px;
+  margin-top: 32px;
+}
+
+section ol li, section ul li, .list li {
+  padding: 0 0 2rem;
   line-height: 1.5;
 }
 
@@ -163,11 +264,11 @@ section ul li, .list li {
 .highlight {
   list-style-position: inside;
   text-indent: -1em;
-  padding: 0.75rem;
-  padding-left: 2.25rem;
-  margin-bottom: 0.75rem;
-  margin-left: -1.75rem;
-  background: var(--color-green-20);
+  padding: 1rem;
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+  margin-left: -2rem;
+  background: var(--color-highlight);
 }
 
 @media only screen and (max-width: 599px) {
