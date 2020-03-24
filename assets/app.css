@@ -124,7 +124,7 @@ aside p {
   padding-bottom: 1rem;
 }
 
-#faq ul li p {
+#faq ul li p.question {
   font-size: 1.2rem;
   font-weight: bold;
   padding: 0;
@@ -132,7 +132,11 @@ aside p {
   margin-top: 0.6rem;
 }
 
-#faq ul li p:before {
+#req ul li #answer p {
+  padding-bottom: 1rem;
+}
+
+#faq ul li p.question:before {
   content: '▸';
   margin-right: 0.6rem;
 }
