@@ -143,6 +143,10 @@ aside p {
 }
 
 @media only screen and (max-width: 1024px) {
+  #mentors {
+    width: 100%;
+  }
+
   #mentors #mentor-list {
     flex-direction: column;
   }
