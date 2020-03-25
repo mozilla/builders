@@ -84,7 +84,7 @@ main {
 }
 
 .full-width {
-  flex: 1 1 auto;
+  flex: 1 0 auto;
 }
 
 aside {
@@ -128,8 +128,9 @@ aside p {
 }
 
 #mentors #mentor-list .mentor img {
-  width: 80px;
+  width: 150px;
   height: auto;
+  filter: grayscale(100%);
 }
 
 #mentors #mentor-list h4 {
