@@ -71,12 +71,20 @@ header {
   margin: 0 auto;
 }
 
+.smaller-page {
+ max-width: 980px;
+}
+
 main {
   background-color: var(--white);
   color: var(--black);
   flex: 0.67;
   margin-right: 3rem;
   font-size: 1.1rem;
+}
+
+.full-width {
+  flex: 1;
 }
 
 aside {
