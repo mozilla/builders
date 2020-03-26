@@ -148,38 +148,37 @@ aside p {
 }
 
 #mentors {
-  width: 67%;
+  /* width: 67%; */
   margin: 0;
   font-size: 1.1rem;
-  flex-direction: column;
-}
-
-#mentors #mentor-list {
-  flex-direction: row;
-  flex-wrap: wrap;
-  flex: 1;
-  padding: 0;
-  display: flex;
 }
 
 #mentors #mentor-list .mentor {
-  width: 50%;
   margin: 0;
   display: flex;
-  flex-direction: column;
-  padding-right: 3rem;
+  flex-wrap: nowrap;
+  align-items: flex-start;
   margin-bottom: 2rem;
 }
 
-#mentors #mentor-list .mentor img {
+.mentor-profile {
   width: 150px;
-  height: auto;
-  filter: grayscale(100%);
+  margin-bottom: 1rem;
+}
+
+.mentor-description {
+  padding-left: 2rem;
+}
+
+#mentors #mentor-list .mentor img {
+  max-width: 150px;
+  width: 150px;
 }
 
 #mentors #mentor-list h4 {
-  margin: 1rem 0 0;
+  margin: 0 0 0;
   font-size: 1.1rem;
+  font-weight: bold;
 }
 
 #mentors #mentor-list h4 a {
@@ -187,14 +186,15 @@ aside p {
   font-weight: bold;
 }
 
+
 @media only screen and (max-width: 1024px) {
   #mentors {
     width: 100%;
   }
 
-  #mentors #mentor-list {
+  /* #mentors #mentor-list {
     flex-direction: column;
-  }
+  } */
 
   #mentors #mentor-list .mentor {
     width: auto;
@@ -206,7 +206,7 @@ aside p {
 } */
 
 #faq {
-  width: 67%;
+  /* width: 67%; */
   margin: 0;
   font-size: 1.1rem;
   flex-direction: column;
@@ -408,6 +408,15 @@ section ol li, section ul li, .list li {
 }
 
 @media only screen and (max-width: 599px) {
+
+  #mentors #mentor-list .mentor {
+    flex-direction: column;
+  }
+
+  .mentor-description {
+    padding-left: 0;
+  }
+
   .nav-bar {
     display: block;
   }
