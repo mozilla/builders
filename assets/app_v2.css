@@ -127,6 +127,7 @@ section.inverse {
 
 section h2 {
   font-size: 2.5rem;
+  line-height: 1em;
 }
 
 .smaller-page {
@@ -209,7 +210,7 @@ aside p {
 }
 
 #programs .program-list-button-group small {
-  line-height: 1em;
+  line-height: 1.1em;
   display: block;
 }
 
@@ -238,11 +239,15 @@ aside p {
 }
 
 #mentors #mentor-list {
-  margin: 0;
+  margin: 0 -1em;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
   max-width: 100%;
+}
+
+#mentors a {
+  color: var(--white);
 }
 
 #mentors #mentor-list .mentor {
@@ -274,12 +279,6 @@ aside p {
 .mentor-description p {
    margin: 0 0 2em;
    padding: 0 0 0;
-   /* text-overflow: ellipsis;
-   white-space: nowrap;
-   overflow: hidden;
-   height: 100px;
-   width: 150px; */
-   /* width: 100%; */
 }
 
 .mentor-description span {
@@ -324,11 +323,11 @@ aside p {
 }
 
 #mentors #mentor-list h4 {
-  margin: 0 0 0;
+  padding: 0;
+  margin: 0;
   font-size: 2rem;
   font-weight: bold;
   font-family: "Zilla Slab", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
 }
 
 #mentors #mentor-list h4 a {
@@ -375,6 +374,7 @@ aside p {
 }
 
 #about .wrapper {
+  padding-top: 0;
   align-items: center;
 }
 
@@ -460,6 +460,11 @@ aside p {
   /* #mentors #mentor-list .mentor {
     width: auto;
   } */
+
+  #mentors #mentor-list .mentor {
+    flex: 1 1 calc(50% - 2rem);
+  }
+
 }
 
 /* #mentors #mentor-list .mentor:nth-child(1) {
@@ -517,6 +522,50 @@ aside p {
     flex-direction: column;
     width: 100%;
   }
+
+  #mentors #mentor-list .mentor img {
+    max-width: 400px;
+  }
+
+  .faqs .wrapper, #about .wrapper {
+    display: block;
+  }
+
+  #about .col-left {
+    padding-right: 0;
+  }
+
+  #about .col-right img {
+    margin: 0 auto;
+    display: block;
+    padding-top: 0;
+    max-width: 400px;
+    width: 100%;
+    padding-right: var(--spacing);
+  }
+
+  #programs ul {
+    display: block;
+  }
+
+  #programs ul li, #programs ul li:nth-child(2) {
+    margin-bottom: 1rem;
+    max-width: 100%;
+  }
+
+  #programs ul li:nth-child(2) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .program-list-item {
+    min-height: auto;
+  }
+
+  .program-list-item .btn {
+    max-width: 300px;
+  }
+
 
   /* main {
     flex: 1;
@@ -679,6 +728,16 @@ section ol li, section ul li, .list li {
 
   #mentors #mentor-list .mentor {
     flex-direction: column;
+  }
+
+  #mentors #mentor-list {
+    margin: 0;
+  }
+
+  #mentors #mentor-list .mentor {
+    flex: 1 1 100%;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .mentor-description {
