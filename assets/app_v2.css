@@ -266,23 +266,64 @@ aside p {
   margin-bottom: 1rem;
 }
 
+.mentor-description {
+  position: relative;
+  overflow: hidden;
+}
+
 .mentor-description p {
+   margin: 0 0 2em;
+   padding: 0 0 0;
    /* text-overflow: ellipsis;
    white-space: nowrap;
    overflow: hidden;
    height: 100px;
    width: 150px; */
    /* width: 100%; */
+}
 
+.mentor-description span {
+  display: inline;
+}
+
+.mentor-description label {
+  display: block;
+  text-decoration: underline;
+}
+
+.mentor-description input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.mentor-description .tab-content {
+  max-height: 0;
+  transition: all 0.5 ease-out;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.mentor-description input:checked ~ .tab-content {
+  max-height: 100vh;
+  display: inline;
+  overflow: visible;
+}
+
+.mentor-description input:checked ~ label {
+  position: absolute;
+  bottom: 0em;
+}
+
+.mentor-description input:checked ~ span {
+  display: none;
 }
 
 #mentors #mentor-list .mentor img {
   width: 100%;
-  /* max-width: calc(33%);
-  width: calc(33%); */
 }
 
-#mentors #mentor-list {
+#mentors #mentor-list h4 {
   margin: 0 0 0;
   font-size: 2rem;
   font-weight: bold;
