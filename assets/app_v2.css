@@ -453,6 +453,15 @@ aside p {
     line-height: 1.1em;
   }
 
+  .faqs .col-left {
+    flex: 0.2;
+  }
+
+  .faqs .col-right {
+    flex: 0.8;
+    padding-left: 2rem;
+  }
+
   /* #mentors #mentor-list {
     flex-direction: column;
   } */
@@ -533,6 +542,14 @@ aside p {
 
   #about .col-left {
     padding-right: 0;
+  }
+
+  .faqs .col-left {
+    padding-bottom: 2rem;
+  }
+
+  .faqs .col-right {
+    padding-left: 0;
   }
 
   #about .col-right img {
