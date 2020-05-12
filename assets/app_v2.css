@@ -16,6 +16,7 @@ body {
   --padding: calc(var(--spacing) * 1.5) var(--spacing);
 
   --purple: #20123a;
+  --pink: #FD4C94;
   --white: #fff;
   --black: #000000;
   --blue: #62cddf;
@@ -175,26 +176,58 @@ aside p {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  margin: 0;
+  margin: 2rem 0 0;
   padding: 0;
   justify-content: space-between;
 }
 
 #programs ul li {
-  flex: 1 1 calc(25% - 2rem);
-  margin-left: 1rem;
-  margin-right: 1rem;
+  flex: 1 1 calc(25%);
+  flex-direction: column;
+  max-width: 270px;
+}
+
+#programs ul li:nth-child(2) {
+  margin: 0 1em;
+}
+
+
+
+.program-list-item {
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.program-list-item p {
+  margin: 0 0 0.5rem;
+  padding: 0;
+}
+
+#programs .program-list-button-group {
+  margin-top:auto;
+}
+
+#programs .program-list-button-group small {
+  line-height: 1em;
+  display: block;
 }
 
 #programs h2 {
+  margin: 0 0 0.5rem;
+}
 
+#programs h2 + p {
+  margin: 0;
+  padding: 0 0 1rem;
 }
 
 #programs h3 {
-  font-size: 2rem;
-  line-height: 1em;
-  margin-bottom: 0;
+  font-size: 1.75rem;
+  line-height: 1.1em;
+  margin: 0 0 0.5rem;
 }
+
 
 #mentors {
   /* width: 67%; */
@@ -274,6 +307,11 @@ aside p {
   margin: 1em 0 0;
   display: block;
   text-align: center;
+  transition: 0.1s all ease-out;
+}
+
+.btn:hover {
+  background: var(--pink);
 }
 
 .btn.disabled {
@@ -283,7 +321,7 @@ aside p {
   cursor: not-allowed;
 }
 
-.faqs .wrapper {
+.faqs .wrapper, #about .wrapper {
   padding-left: var(--spacing);
   padding-right: var(--spacing);
   padding-top: calc(var(--spacing) * 1.5);
@@ -293,6 +331,24 @@ aside p {
   max-width: 1240px;
   margin: 0 auto;
   flex-wrap: wrap;
+}
+
+#about .wrapper {
+  align-items: center;
+}
+
+#about .col-left {
+  flex: 0.67;
+  padding-right: 3rem;
+}
+
+#about .col-right {
+  flex: 0.33;
+}
+
+#about .col-right img {
+  max-width: 320px;
+  padding-top: 2rem;
 }
 
 .faqs .col-left {
