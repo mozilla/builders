@@ -381,6 +381,7 @@ aside p {
 #about .col-left {
   flex: 0.67;
   padding-right: 3rem;
+
 }
 
 #about .col-right {
@@ -392,8 +393,18 @@ aside p {
   padding-top: 2rem;
 }
 
+.sticky {
+  position: fixed;
+}
+
+#sticky.bottom {
+  position: absolute;
+  bottom: 0;
+}
+
 .faqs .col-left {
   flex: 0.33;
+  position: relative;
 }
 
 .faqs .col-right {
@@ -538,6 +549,15 @@ aside p {
 
   .faqs .wrapper, #about .wrapper {
     display: block;
+  }
+
+  .sticky {
+    position: relative;
+  }
+
+  #sticky.bottom {
+    position: relative;
+    bottom: auto;
   }
 
   #about .col-left {
