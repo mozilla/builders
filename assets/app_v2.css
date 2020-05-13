@@ -227,7 +227,11 @@ main {
 
 /* Programs */
 #programs {
-	padding-bottom: calc(var(--spacing) * 1.5);
+	padding-bottom: 1em;
+}
+
+#program .wrappy {
+	padding-bottom: 1em;
 }
 
 #programs ul {
@@ -282,6 +286,12 @@ main {
 	font-size: 1.75rem;
 	line-height: 1.1em;
 	margin: 0 0 0.5rem;
+}
+
+/* Testimonials */
+
+#testimonials {
+	padding-bottom: calc(var(--spacing) * 1.5);
 }
 
 /* Mentors */
@@ -521,6 +531,7 @@ main {
 
 .sticky {
 	position: fixed;
+	max-width: 20rem;
 }
 
 #sticky.bottom {
