@@ -634,12 +634,7 @@ aside p {
   .nav-bar ul li a {
     font-size: 1.25rem;
     margin-left: 0;
-    padding: 0.1em;
   }
-  .nav-bar ul li:last-child a {
-    padding: 0 0.25em;
-  }
-
 }
 
 section {
@@ -772,22 +767,6 @@ section ol li, section ul li, .list li {
   background: var(--color-highlight);
 }
 
-@media only screen and (max-width: 750px) {
-  .nav-bar {
-    display: block;
-  }
-  .nav-bar ul {
-    padding: 1rem 0;
-    display: flex;
-    justify-content: space-between;
-    max-width: 500px;
-  }
-
-  .nav-bar ul li:first-child a {
-    padding-left: 0;
-  }
-}
-
 @media only screen and (max-width: 599px) {
 
   header h1 {
@@ -813,10 +792,19 @@ section ol li, section ul li, .list li {
     padding-left: 0;
   }
 
-  .nav-bar ul li a {
-    font-size: 1.25rem;
+  .nav-bar {
+    display: block;
+  }
+  .nav-bar ul {
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    max-width: 500px;
   }
 
+  .nav-bar ul li:first-child a {
+    padding-left: 0;
+  }
 
   .form {
     display: block;
