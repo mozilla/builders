@@ -328,6 +328,10 @@ main {
 	margin: 0 0 0.5rem;
 }
 
+article ol li {
+	padding-bottom: 1em;
+}
+
 /* Testimonials */
 
 #testimonials {
