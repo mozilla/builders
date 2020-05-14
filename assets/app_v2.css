@@ -476,6 +476,7 @@ article ol li {
 
 .toc a:hover {
 	color: var(--purple);
+	text-decoration: underline;
 }
 
 .text-h5, .faq-article-title {
