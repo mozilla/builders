@@ -698,6 +698,11 @@ article ol ol li {
 	padding: 0;
 }
 
+.footer-top h2 span {
+	display: inline-block;
+	line-height: 1em;
+}
+
 .footer-top h2 small {
 	display: block;
 	font-family: 'intermedium', sans-serif;
@@ -945,4 +950,15 @@ article ol ol li {
 	.form>div h2 {
 		font-size: 1.8rem;
 	}
+
+	.nav-bar ul li a {
+		padding: 0.25em 0rem;
+	}
+
+	.nav-bar ul li a:last-child {
+		padding: 0.25em 0.5rem;
+	}
+
+
+}
 }
