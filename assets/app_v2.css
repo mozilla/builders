@@ -764,7 +764,7 @@ article ol ol li {
 	}
 
 	#mentors #mentor-list .mentor {
-		flex: 1 1 calc(50% - 2rem);
+		flex: 0 0 calc(50% - 2rem);
 	}
 }
 
@@ -775,7 +775,7 @@ article ol ol li {
 	}
 
 	#mentors #mentor-list .mentor img {
-		max-width: 400px;
+		max-width: 350px;
 	}
 
 	.faqs .wrapper, #about .wrapper {
@@ -903,12 +903,6 @@ article ol ol li {
 		margin: 0;
 	}
 
-	#mentors #mentor-list .mentor {
-		flex: 1 1 100%;
-		margin-left: 0;
-		margin-right: 0;
-	}
-
 	.mentor-description {
 		padding-left: 0;
 	}
@@ -961,4 +955,11 @@ article ol ol li {
 
 
 }
+
+@media only screen and (max-width: 499px) {
+	#mentors #mentor-list .mentor {
+		flex: 1 1 100%;
+		margin-left: 0;
+		margin-right: 0;
+	}
 }
