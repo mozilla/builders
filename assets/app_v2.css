@@ -698,6 +698,11 @@ article ol ol li {
 	padding: 0;
 }
 
+.footer-top h2 span {
+	display: inline-block;
+	line-height: 1em;
+}
+
 .footer-top h2 small {
 	display: block;
 	font-family: 'intermedium', sans-serif;
@@ -759,18 +764,21 @@ article ol ol li {
 	}
 
 	#mentors #mentor-list .mentor {
-		flex: 1 1 calc(50% - 2rem);
+		flex: 0 0 calc(33% - 2rem);
 	}
 }
 
 @media only screen and (max-width: 860px) {
+
+
+
 	.content {
 		flex-direction: column;
 		width: 100%;
 	}
 
 	#mentors #mentor-list .mentor img {
-		max-width: 400px;
+		max-width: 350px;
 	}
 
 	.faqs .wrapper, #about .wrapper {
@@ -850,15 +858,33 @@ article ol ol li {
 	}
 }
 
+@media only screen and (max-width: 768px) {
+	#mentors #mentor-list .mentor {
+		flex: 0 0 calc(50% - 2rem);
+	}
+}
+
 @media only screen and (max-width: 700px) {
 	.desktop-only {
 		display: none;
 	}
 
 
+
 	.nav-bar ul li a {
 		font-size: 1rem;
 	}
+
+	#mentors #mentor-list {
+		justify-content: space-between;
+	}
+
+	#mentors #mentor-list .mentor {
+		flex: 0 0 calc(50% - 1rem);
+		margin-left: 0;
+		margin-right: 0;
+	}
+
 }
 
 @media only screen and (max-width: 599px) {
@@ -898,10 +924,8 @@ article ol ol li {
 		margin: 0;
 	}
 
-	#mentors #mentor-list .mentor {
-		flex: 1 1 100%;
-		margin-left: 0;
-		margin-right: 0;
+	#mentors #mentor-list h4 {
+		font-size: 1.5rem;
 	}
 
 	.mentor-description {
@@ -945,4 +969,22 @@ article ol ol li {
 	.form>div h2 {
 		font-size: 1.8rem;
 	}
+
+	.nav-bar ul li a {
+		padding: 0.25em 0rem;
+	}
+
+	.nav-bar ul li a:last-child {
+		padding: 0.25em 0.5rem;
+	}
+
+
+}
+
+@media only screen and (max-width: 499px) {
+	/* #mentors #mentor-list .mentor {
+		flex: 1 1 100%;
+		margin-left: 0;
+		margin-right: 0;
+	} */
 }
