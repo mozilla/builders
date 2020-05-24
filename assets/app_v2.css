@@ -305,7 +305,7 @@ main {
 
 /* Programs */
 #programs {
-	padding-bottom: 1em;
+	padding-bottom: var(--spacing);
 }
 
 #program .wrappy {
