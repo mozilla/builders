@@ -116,6 +116,10 @@ a {
 	max-width: 800px;
 }
 
+.mw-1200 {
+	max-width: 1200px;
+}
+
 .upper {
 	text-transform: uppercase;
 }
