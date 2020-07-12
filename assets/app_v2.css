@@ -813,6 +813,8 @@ article ol ol li {
 .showcase-item-text h3 {
 	padding: 0;
 	margin: 0 0 0.5rem;
+	font-size: 1.5rem;
+	line-height: 1em;
 }
 
 .showcase-item-text p {
@@ -1086,6 +1088,11 @@ article ol ol li {
 
 	.showcase-item-button .btn {
 		margin-top: 1rem;
+		padding: 0.75rem 1.5rem;
+	}
+
+	.showcase-item-logo img {
+		max-width: 75px;
 	}
 
 }
