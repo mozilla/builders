@@ -830,7 +830,6 @@ article ol ol li {
 	margin: 1em 0 0;
 }
 
-
 .showcase-item-text label {
 	display: block;
 	text-decoration: underline;
@@ -848,11 +847,11 @@ article ol ol li {
 }
 
 .showcase-item-text a + p,
-.showcase-item-text input:checked~p {
+.showcase-item-text input:checked ~ p {
 	display: block;
 }
 
-.showcase-item-text input:checked~label {
+.showcase-item-text input:checked ~ label {
 	display: none;
 }
 
