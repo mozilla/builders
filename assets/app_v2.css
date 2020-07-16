@@ -812,6 +812,11 @@ article ol ol li {
 	padding-right: var(--spacing);
 }
 
+.showcase-item-text a {
+	text-decoration: none;
+	color: var(--black);
+}
+
 .showcase-item-text h3 {
 	padding: 0;
 	margin: 0 0 0.5rem;
@@ -838,11 +843,11 @@ article ol ol li {
 	z-index: -1;
 }
 
-.showcase-item-text h3 + p {
+.showcase-item-text a + p {
 	margin: 0 0 1em;
 }
 
-.showcase-item-text h3 + p,
+.showcase-item-text a + p,
 .showcase-item-text input:checked~p {
 	display: block;
 }
