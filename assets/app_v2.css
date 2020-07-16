@@ -778,6 +778,95 @@ article ol ol li {
 	background: var(--color-highlight);
 }
 
+/* Showcase Styles */
+
+.showcase-list {
+	padding-top: calc(var(--spacing) * 1.5);
+}
+
+.showcase-item {
+	border: 1px solid #D8D8D8;
+	padding: var(--spacing);
+	margin-bottom: var(--spacing);
+	display: flex;
+	align-content: flex-start;
+}
+
+.showcase-item-logo {
+	padding-right: var(--spacing);
+}
+
+.showcase-item-logo img {
+	display: block;
+	max-width: 100px;
+}
+
+.showcase-item-content {
+	display: flex;
+	flex-grow: 2;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.showcase-item-text {
+	padding-right: var(--spacing);
+}
+
+.showcase-item-text a {
+	text-decoration: none;
+	color: var(--black);
+}
+
+.showcase-item-text h3 {
+	padding: 0;
+	margin: 0 0 0.5rem;
+	font-size: 1.5rem;
+	line-height: 1em;
+}
+
+.showcase-item-text p {
+	padding: 0;
+	display: none;
+	margin: 1em 0 0;
+}
+
+.showcase-item-text label {
+	display: block;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.showcase-item-text input {
+	position: absolute;
+	opacity: 0;
+	z-index: -1;
+}
+
+.showcase-item-text a + p {
+	margin: 0 0 1em;
+}
+
+.showcase-item-text a + p,
+.showcase-item-text input:checked ~ p {
+	display: block;
+}
+
+.showcase-item-text input:checked ~ label {
+	display: none;
+}
+
+/* .showcase-item-text input:checked~p {
+	display: none;
+} */
+
+.showcase-item-button .btn {
+	white-space: nowrap;
+	padding: 0.75rem 2.5rem;
+	font-size: 1.25rem;
+	margin-top: 2rem;
+}
+
+
 @media only screen and (max-width: 1024px) {
 	section h2 {
 		font-size: 2.5rem;
@@ -1026,6 +1115,22 @@ article ol ol li {
 		padding: 0.25em 0.5rem;
 	}
 
+	.showcase-item-text {
+		padding-right: 0;
+	}
+
+	.showcase-item-content {
+		display: block;
+	}
+
+	.showcase-item-button .btn {
+		margin-top: 2rem;
+		padding: 0.75rem 1.5rem;
+	}
+
+	.showcase-item-logo img {
+		max-width: 75px;
+	}
 
 }
 
