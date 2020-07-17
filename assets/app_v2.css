@@ -768,6 +768,15 @@ article ol ol li {
 	color: var(--white);
 }
 
+.footer-links a {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.footer-links a:last-child {
+	margin-right: 0;
+}
+
 .highlight {
 	list-style-position: inside;
 	text-indent: -1em;
@@ -864,6 +873,12 @@ article ol ol li {
 	padding: 0.75rem 2.5rem;
 	font-size: 1.25rem;
 	margin-top: 2rem;
+}
+
+.showcase-into {
+	font-size: 1.1em;
+	line-height: 1.5em;
+	margin-bottom: 2rem;
 }
 
 
@@ -988,6 +1003,7 @@ article ol ol li {
 }
 
 @media only screen and (max-width: 700px) {
+
 	.desktop-only {
 		display: none;
 	}
@@ -1024,7 +1040,9 @@ article ol ol li {
 
 }
 
-@media only screen and (max-width: 599px) {
+@media only screen and (max-width: 620px) {
+
+
 
 	header h1 {
 		font-size: 2.25rem;
@@ -1135,6 +1153,8 @@ article ol ol li {
 }
 
 @media only screen and (max-width: 499px) {
+
+
 	/* #mentors #mentor-list .mentor {
 		flex: 1 1 100%;
 		margin-left: 0;
