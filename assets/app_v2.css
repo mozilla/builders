@@ -394,6 +394,16 @@ article ol li {
 	padding-bottom: calc(var(--spacing) * 1.5);
 }
 
+/*Connect Program */
+
+#connect-speaker-name {
+	color: var(--black);
+}
+
+#connect-speaker-panel #mentors #mentor-list .mentor {
+	padding-bottom: 0;
+}
+
 /* Mentors */
 #mentors {
 	margin: 0;
@@ -1151,6 +1161,7 @@ article ol ol li {
 	}
 
 }
+
 
 @media only screen and (max-width: 499px) {
 
