@@ -17,7 +17,8 @@ body {
 	--padding: calc(var(--spacing) * 1.5) var(--spacing);
 	--purple: #20123a;
 	--pink: #FD4C94;
-	--pink-hover: #FD4C94;
+	--pink-hover: #EB3C83;
+	--pink-active: #DA2871;
 	--pink-dark: #A00069;
 	--pink-darker: #78004F;
 	--white: #fff;
@@ -977,10 +978,11 @@ article ol ol li {
 	text-decoration: none;
 	color: var(--white);
 	font-size: 2rem;
-	box-shadow: -5px 5px 0 var(--pink-dark);
+	box-shadow: -6px 6px 0 var(--pink-dark);
 	border: 1px solid var(--pink-dark);
 	position: relative;
-	transition: box-shadow .2s ease, background .2s ease, top .2s ease;
+	/* transition: top 0.2s ease, left 0.2s ease, background 0.2s ease, left 0.2s ease; */
+	transition: background 0.2s linear;
 	margin-right: 2rem;
 	margin-bottom: 0.5rem;
 	display: block;
@@ -988,13 +990,17 @@ article ol ol li {
 
 .fti-rsvp a:hover {
 	background: var(--pink-hover);
+	box-shadow: -4px 4px 0 var(--pink-dark);
+	left: -2px;
+	top: 2px;
 }
-/*
+
 .fti-rsvp a:active {
-	top: 1px;
-	background: var(--pink-hover);
-	box-shadow: 0 1px 0 var(--pink-dark);
-} */
+	background: var(--pink-active);
+	box-shadow: -2px 2px 0 var(--pink-dark);
+	left: -4px;
+	top: 4px;
+}
 
 .fti-rsvp-date {
 	font-size: 1.5rem;

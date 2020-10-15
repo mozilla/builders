@@ -3,6 +3,7 @@
 
     var closeButton = document.querySelector('.js-fti-launch-close');
     var ftiModal = document.querySelector('.fti-launch');
+    var rsvpButton = document.querySelector('.fti-rsvp-button');
 
     function hideModal() {
       ftiModal.classList.add('hidden');
@@ -19,5 +20,8 @@
     // Add listeners to close button and esc key
     closeButton.addEventListener('click', hideModal);
     document.body.addEventListener('keydown', keyPressHandler);
+    // rsvpButton.addEventListener('click', function(e){
+    //   e.preventDefault();
+    // });
 
 })();
