@@ -902,16 +902,23 @@ article ol ol li {
 	top: 2em;
 	max-width: 800px;
 	width: calc( 100% - 4rem );
-	background: black;
 	z-index: 999;
 	left: 50%;
 	transform: translateX(-50%);
 	padding: 1rem 2rem 2rem;
 	color: var(--white);
+	background: url(/assets/img/fti-arrow.svg) 20px 530px no-repeat black;
+	background-size: 120px auto;
 }
 
 .fti-launch p {
 	font-size: 0.9rem;
+}
+
+.fti-builders-logo {
+	display: block;
+	max-width: 240px;
+	margin: 2rem 0 1rem;
 }
 
 .fti-launch-cover {
@@ -1149,6 +1156,10 @@ article ol ol li {
 	.nav-bar ul li a {
 		font-size: 1.25rem;
 		margin-left: 0;
+	}
+
+	.fti-launch {
+		background-image: none;
 	}
 
 	.fti-launch-content {
