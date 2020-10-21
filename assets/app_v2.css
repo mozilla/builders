@@ -177,7 +177,7 @@ header h1 {
 	margin-right: 2rem;
 }
 
-.socail-links > div {
+.socail-links>div {
 	display: inline-block;
 }
 
@@ -202,7 +202,6 @@ header h1 {
 	margin-left: 0.25rem;
 	text-decoration: underline;
 }
-
 
 /* Navigation */
 .nav-bar {
@@ -381,11 +380,11 @@ main {
 }
 
 .aspect-ratio-box iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
 
 article ol li {
@@ -393,13 +392,11 @@ article ol li {
 }
 
 /* Testimonials */
-
 #testimonials {
 	padding-bottom: calc(var(--spacing) * 1.5);
 }
 
 /*Connect Program */
-
 #connect-speaker-name {
 	color: var(--black);
 }
@@ -802,7 +799,6 @@ article ol ol li {
 }
 
 /* Showcase Styles */
-
 .showcase-list {
 	padding-top: calc(var(--spacing) * 1.5);
 }
@@ -865,23 +861,22 @@ article ol ol li {
 	z-index: -1;
 }
 
-.showcase-item-text a + p {
+.showcase-item-text a+p {
 	margin: 0 0 1em;
 }
 
-.showcase-item-text a + p,
-.showcase-item-text input:checked ~ p {
+.showcase-item-text a+p,
+.showcase-item-text input:checked~p {
 	display: block;
 }
 
-.showcase-item-text input:checked ~ label {
+.showcase-item-text input:checked~label {
 	display: none;
 }
 
 /* .showcase-item-text input:checked~p {
 	display: none;
 } */
-
 .showcase-item-button .btn {
 	white-space: nowrap;
 	padding: 0.75rem 2.5rem;
@@ -895,13 +890,12 @@ article ol ol li {
 	margin-bottom: 2rem;
 }
 
-
 /* -------------------------------------------------------------------------- */
 .fti-launch {
 	position: absolute;
 	top: 2em;
 	max-width: 800px;
-	width: calc( 100% - 4rem );
+	width: calc(100% - 4rem);
 	z-index: 999;
 	left: 50%;
 	transform: translateX(-50%);
@@ -939,7 +933,7 @@ article ol ol li {
 	display: none;
 }
 
-.fti-launch.hidden + .fti-launch-cover {
+.fti-launch.hidden+.fti-launch-cover {
 	display: none;
 }
 
@@ -997,7 +991,7 @@ article ol ol li {
 	flex-wrap: wrap;
 }
 
-.fti-rsvp a {
+.fti-rsvp a, .fti-rsvp-button {
 	font-family: var(--zilla);
 	background: var(--pink);
 	padding: 0.75rem 2.5rem 0.75rem 0.75rem;
@@ -1016,14 +1010,14 @@ article ol ol li {
 	display: block;
 }
 
-.fti-rsvp a:hover {
+.fti-rsvp a:hover, .fti-rsvp-button:hover {
 	background: var(--pink-hover);
 	box-shadow: -4px 4px 0 var(--pink-dark);
 	left: -2px;
 	top: 2px;
 }
 
-.fti-rsvp a:active {
+.fti-rsvp a:active, .fti-rsvp-button:active {
 	background: var(--pink-active);
 	box-shadow: -2px 2px 0 var(--pink-dark);
 	left: -4px;
@@ -1044,6 +1038,41 @@ article ol ol li {
 	color: white;
 }
 
+/* -------------------------------------------------------------------------- */
+.fti-eyebrow {
+	background: var(--black);
+	border-bottom: 1px solid rgba(256, 256, 256, 0.5);
+	padding: 1.5em 0;
+}
+
+.fti-eyebrow-wrapper {
+	padding-bottom: 0;
+	max-width: 800px;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-wrap: nowrap;
+}
+
+.fti-eyebrow-desktop {
+	max-width: calc(100% - 100px);
+	padding-right: 3em;
+}
+
+.fti-eyebrow-logo {
+	max-width: 80%;
+	display: none;
+	margin-bottom: 2em;
+}
+
+.fti-eyebrow-date {
+	display: none;
+}
+
+.fti-rsvp-button {
+	margin-top: 14px;
+	min-width: 175px;
+}
 
 @media only screen and (max-width: 1024px) {
 	section h2 {
@@ -1070,9 +1099,6 @@ article ol ol li {
 }
 
 @media only screen and (max-width: 860px) {
-
-
-
 	.content {
 		flex-direction: column;
 		width: 100%;
@@ -1171,6 +1197,20 @@ article ol ol li {
 		top: 1em;
 		right: 1em;
 	}
+}
+
+@media only screen and (max-width: 816px) {
+	.fti-eyebrow-wrapper {
+		display: block;
+		max-width: none;
+	}
+
+	.fti-eyebrow-desktop {
+		max-width: 100%;
+		padding-right: 0;
+	}
+
+
 
 }
 
@@ -1190,7 +1230,7 @@ article ol ol li {
 
 	.fti-launch {
 		top: 1em;
-		width: calc( 100% - 2rem );
+		width: calc(100% - 2rem);
 		padding: 1rem;
 	}
 
@@ -1198,9 +1238,6 @@ article ol ol li {
 		right: 1em;
 		width: 25px;
 	}
-
-
-
 }
 
 @media only screen and (max-width: 700px) {
@@ -1223,8 +1260,6 @@ article ol ol li {
 		margin-bottom: 1rem;
 	}
 
-
-
 	.nav-bar ul li a {
 		font-size: 1rem;
 	}
@@ -1238,12 +1273,27 @@ article ol ol li {
 		margin-left: 0;
 		margin-right: 0;
 	}
-
 }
 
 @media only screen and (max-width: 620px) {
+	.fti-eyebrow-desktop {
+		display: none;
+	}
 
+	.fti-eyebrow-date {
+		display: block;
+		width: 100%;
+	}
 
+	.fti-eyebrow-logo {
+		max-width: 90%;
+		margin: 0 auto 1em;
+		display: block;
+	}
+
+	.fti-rsvp-button {
+		min-width: calc(100%);
+	}
 
 	header h1 {
 		font-size: 2.25rem;
@@ -1350,13 +1400,9 @@ article ol ol li {
 	.showcase-item-logo img {
 		max-width: 75px;
 	}
-
 }
 
-
 @media only screen and (max-width: 499px) {
-
-
 	/* #mentors #mentor-list .mentor {
 		flex: 1 1 100%;
 		margin-left: 0;
