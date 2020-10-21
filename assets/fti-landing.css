@@ -1,0 +1,48 @@
+.landing-page {
+	margin: 0;
+	background: black;
+}
+
+.landing-page .fti-launch {
+	max-width: 800px;
+	background: none;
+	top: auto;
+	left: auto;
+	right: auto;
+	bottom: auto;
+	position: static;
+	margin: auto;
+	transform: none;
+}
+
+.landing-page .fti-launch .content {
+	max-width: 800px;
+	position: relative;
+
+	background: url(/assets/img/fti-arrow.svg) 0 500px no-repeat black;
+	background-size: 120px auto;
+
+}
+
+.fti-bg-https {
+	position: absolute;
+	bottom: -2em;
+	right: 0;
+	width: 200px;
+	display: block;
+}
+
+@media only screen and (max-width: 860px) {
+	.landing-page .fti-launch .content {
+		background-image: none;
+	}
+
+	.fti-bg-https {
+		display: none;
+	}
+
+}
+
+@media only screen and (max-width: 499px) {
+
+}
