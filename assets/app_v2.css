@@ -340,7 +340,7 @@ main {
 }
 
 .program-list-item {
-	min-height: 300px;
+	min-height: 225px;
 	display: flex;
 	flex-direction: column;
 }
