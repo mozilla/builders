@@ -108,7 +108,7 @@ a {
 	background: var(--pink);
 }
 
-.btn.disabled {
+.btn.not-allowed {
 	background: none;
 	border: 1px solid var(--gray);
 	color: var(--gray);
@@ -246,6 +246,12 @@ header h1 {
 	color: var(--purple);
 	background: var(--white);
 }
+
+.nav-bar a.not-allowed {
+	display: none;
+}
+
+
 
 /* Basic Layout */
 .content {
