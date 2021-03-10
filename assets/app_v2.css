@@ -411,7 +411,7 @@ article ol li {
 /* Mentors */
 #mentors {
 	margin: 0;
-	font-size: 1.1rem;
+	font-size: 1rem;
 	padding-top: calc(var(--spacing) * 1.5);
 	padding-bottom: calc(var(--spacing) * 1.5);
 }
