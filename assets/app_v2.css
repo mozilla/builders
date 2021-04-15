@@ -380,6 +380,10 @@ main {
 	margin: 0 0 0.5rem;
 }
 
+.aspect-ratio-box-wrapper {
+	max-width: 500px;
+}
+
 .aspect-ratio-box {
 	position: relative;
 	overflow: hidden;
