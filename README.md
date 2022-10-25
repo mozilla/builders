@@ -12,3 +12,6 @@ Mozilla’s Fix-The-Internet Incubator was started by a leading computer scienti
 ## Contact
 
 [fixspringlab@mozilla.com](mailto:fixspringlab@mozilla.com)
+
+Need site edits?  
+[mcrawford@mozilla.com](mailto:mcrawford@mozilla.com)
