@@ -1054,6 +1054,58 @@ article ol ol li {
 	color: white;
 }
 
+/* Placeholder page */
+#placeholder {
+	background: var(--black);
+	color: var(--white);
+}
+
+#placeholder main {
+	color: var(--white);
+	font-size: 1.2rem;
+}
+
+#placeholder h1 {
+	margin: 64px auto;
+	text-align: center;
+}
+
+#placeholder h1 img {
+	max-width: 100%;
+	height: auto;
+}
+
+#placeholder .content {
+	display: block;
+	max-width: 800px;
+}
+
+#placeholder a,
+#placeholder a:link,
+#placeholder a:visited {
+	color: var(--white);
+}
+
+#placeholder a:hover,
+#placeholder a:focus {
+	color: var(--pink-hover);
+}
+
+/* Disclaimer banner */
+.disclaimer {
+	background: var(--color-green-20);
+	text-align: center;
+	padding: 1em 0;
+}
+
+.disclaimer .content {
+	display: block;
+	padding-bottom: 0;
+}
+
+.disclaimer p {
+	margin: 0;
+}
 
 @media only screen and (max-width: 1024px) {
 	section h2 {
